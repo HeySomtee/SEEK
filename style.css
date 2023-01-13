@@ -1,0 +1,120 @@
+body
+{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0%;
+}
+
+.bk
+{
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+.bk-img
+{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header
+{
+    display: grid;
+    place-content: center;
+    font-size: x-large;
+}
+
+.dropdown-content
+{
+    /* display: none; */
+    width: 50vw;
+    height: 80vh;
+    margin-top: -100vh;
+    background: rgb(75, 50, 3);
+    border: solid aqua;
+    border-radius: 5%;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+   animation: 4s forwards ;
+    /* From https://css.glass */
+background: rgba(75, 50, 3, 0.849);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.8px);
+-webkit-backdrop-filter: blur(5.8px);
+/* border: 1px solid rgba(75, 50, 3, 0.829); */
+}
+
+@keyframes nav
+{
+    0%
+    {
+        margin-top: -100vh;
+    }
+
+    100%
+    {
+        margin-top: 00vh;
+    }
+
+}
+
+@keyframes nav-rev
+{
+    0%
+    {
+        margin-top: 00vh;
+    }
+
+    100%
+    {
+        margin-top: -100vh;
+    }
+
+}
+.profile img
+{
+    width: 30%;
+    border-radius: 50%;
+    float: left;
+    border: solid aqua;
+}
+
+b{
+    color: aqua;
+}
+
+.about
+{
+    /* display: grid; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    clear: both;
+}
+
+.tasks
+{
+    font-size: large;
+}
+
+#class
+{
+    clear: both;
+}
+
+.foot
+{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: x-large;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: 15px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+   
+    <div>
+        <div class="bk">
+            <img class="bk-img" src="https://pbs.twimg.com/media/FmPTRKXXkAA0i4O?format=jpg&name=large" alt="bk-img">
+        </div>
+
+    </div>
+    <div class="header">
+        <h1>MyApplication <i id="dropB"  class="fa-sharp fa-solid fa-caret-down"></i></h1>
+        <div id="drop" class="dropdown-content">
+            <ul class="profile">
+                <img src="/anime.png" alt=""> 
+                <b>Somtee#4719</b> <b>@Somtee_ioj</b>
+
+                <div>
+                    <p style="color: orangered;">
+                        Eth wallet: <input type="text" value="0xC1B503B6c0D110f0cf6B727D109FC575B4Ad6D79" id="myInput">
+                        <button onclick="myFunction()"><i class="fa-solid fa-copy"></i></button>
+                    </p>
+                    <p style="color: rgb(98, 21, 150);">
+                        Sol wallet: <input type="text" value="EDUD2Tovww5miDND2oC6AaRmHQCjTnWWjx39LU47UViy" id="myInput1">
+                        <button onclick="myFunction1()"><i class="fa-solid fa-copy"></i></button>
+                    </p>
+
+                    <p class="tasks">
+                        <b style="color: black;">Tasks: </b> <br>  
+                        <i class="fa-regular fa-square-check"></i>Read GitBook. <br>
+                        <i class="fa-regular fa-square-check"></i>Follow, notifications on, and quote-retweet @SEAKNFT @SEAKCollabs on Twitter. <br>
+                        <i class="fa-regular fa-square-check"></i>Answer above questions with complete honesty.<br>
+                        quote-tweet link: <a href="https://twitter.com/Somtee_ioj/status/1614029383190171649?s=20&t=EzcdT_70DDpoxxUX5TGy2w"></a>
+                    </p>
+
+                    <div class="about">
+                        <p>
+                            <b id="class">About Me</b> <br>
+                        </p>   
+                    </div>
+                    <div>
+                        I'm Somtee, co founder of <a href="https://twitter.com/Zen_dao3">ZenAlpha</a>, Crypto Trader(NFT & DeFi) and also a developer.
+                        I've been in the NFT space for about 11 months but way longer in crypto, Today I decided to apply for the seaklist in style to really show my bullishness and I hope you like it.
+
+                    </div>
+                </div>
+
+              
+            </ul>
+        </div>
+    </div>
+    <div class="foot">
+      <b style="color: yellow;">Apply for seeklist <a href="https://docs.google.com/forms/d/e/1FAIpQLSergdAcXeozDkVTlHMwaCJ36hwiUiCBaD1uwrCIuG1WLttBcw/viewform">here</a> </b>
+      <div>
+        <a href="https://twitter.com/SEAKNFT"><i class="fa-brands fa-twitter"></i> </a> <a href="https://discord.gg/seak"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+          // Get the text field
+          var copyText = document.getElementById("myInput");
+        
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+        
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+          
+          // Alert the copied text
+          alert("Copied the text: " + copyText.value);
+        }
+
+        function myFunction1() {
+          // Get the text field
+          var copyText = document.getElementById("myInput1");
+        
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+        
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+          
+          // Alert the copied text
+          alert("Copied the text: " + copyText.value);
+        }
+
+        document.getElementById("dropB").addEventListener("click", drop);
+        function drop(e) {
+            document.getElementById("drop").style.animationName = "nav";
+            document.getElementById("dropB").style.rotate = "180deg"
+            e.stopImmediatePropagation();
+                this.removeEventListener("click", drop);
+                var doc = document.getElementById('dropB')
+                doc.onclick = drop1;
+
+        }
+
+        function drop1(e) {
+            document.getElementById("drop").style.animationName = "nav-rev";
+            document.getElementById("dropB").style.rotate = "";
+            
+            e.stopImmediatePropagation();
+                this.removeEventListener("click", drop);
+                var doc = document.getElementById('dropB')
+                doc.onclick = drop;
+        }
+
+        
+        </script>
+</body>
+</html>

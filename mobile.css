@@ -1,0 +1,14 @@
+@media only screen and (max-width: 800px) {
+    .bk-img
+{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 108vh;
+}
+    .dropdown-content
+
+    {
+      width: 100vw;
+    }
+  }
